@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Koduru Pavan Raj</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Koduru Pavan Raj</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/pavanraj.png" alt="Pavan Raj profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p><br>
+            <h1 class="title">Pavan Raj</h1><br>
+            <p class="typing-text"><span id="typing-animation"></span></p><br>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Pavan raj-2103A52146.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <br><div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/pavan-raj-2599462a6/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/pavanrajkoduru'" />
+            </div>
+        </div>
+    </section>
+    <section id="about" class="fade-in">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/pavannn.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Knowledge</h3>
+                        <p>Experience in programming languages such as Java, C, Python.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech Bachelor's Degree</p>
+                    </div>
+                </div>
+                <p>
+                  Passionate software engineer, currently pursuing B.Tech with specialization
+                </p>
+                <p>in Software Engineering.</p>
+                <p>
+                  During my studies, I have gained strong experience in programming languages,
+                </p>
+                <p>web development, and database management.</p>
+                <p>I enjoy working collaboratively and am eager to learn and solve problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2 class="title">My Projects</h2>
+      <br><br>
+      <div class="projects-container">
+    
+        <div class="project-box"><br>
+          <img src=".\assets\p-mart.jpg" alt="Project 1" class="project-img">
+          <div class="project-content">
+            <h3 class="project-title">E-Commerce Website using React with Vite</h3>
+            <p class="project-description">Used React with Vite and JavaScript basics to create a dynamic e-commerce website that included reusable components and numerous states for improved user experience and speed.</p>
+              <div class="btn-container">
+              <a href="https://pavanrajkoduru.github.io/E-Commerce-React-Project/" class="btn btn-color-1">View Project</a>
+              <a href="https://github.com/pavanrajkoduru/E-Commerce-React-Project" class="btn btn-color-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box"><br>
+          <img src=".\assets\monkeypox.png" alt="Project 2" class="project-img">
+          <div class="project-content">
+            <h3 class="project-title">Monkeypox Disease prediction</h3>
+            <p class="project-description">Using data analysis and modeling approaches to support disease monitoring and outbreak preparation, a machine learning model was put into place to forecast and assess the possible spread of monkeypox.</p>
+            <div class="btn-container">
+              <a href="https://github.com/pavanrajkoduru/minor-poject" class="btn btn-color-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="project-box"><br>
+          <img src=".\assets\heart.png" alt="Project 3" class="project-img">
+          <div class="project-content">
+            <h3 class="project-title">Heart Disease Prediction</h3>
+            <p class="project-description">Neural networks, decision trees, and a logistic regression model were used to construct a machine learning model that reliably predicts whether or not a person has heart disease.</p>
+            <div class="btn-container">
+              <a href="https://github.com/pavanrajkoduru/Heart-Disease-Prediction-using-Machine-Learning" class="btn btn-color-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+    </section>
+    
+    
+    <section id="experience" class="fade-in">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>JS</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>React</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="fade-in">
+      <h2 class="title">Contact</h2>
+      <div class="contact-container">
+    
+        <div class="contact-tile">
+          <i class="fa-solid fa-envelope contact-icon"></i>
+          <p>Email</p>
+          <a href="mailto:pavankoduri111@gmail.com">pavankoduri111@gmail.com</a>
+        </div>
+    
+        <div class="contact-tile">
+          <i class="fa-solid fa-phone contact-icon"></i>
+          <p>Phone</p>
+          <a href="tel:+919550646882">+91 9550646882</a>
+        </div>
+    
+        <div class="contact-tile">
+          <i class="fa-brands fa-linkedin contact-icon"></i>
+          <p>LinkedIn</p>
+          <a href="https://www.linkedin.com/in/pavan-raj-2599462a6/" target="_blank">LinkedIn Profile</a>
+        </div>
+    
+        <div class="contact-tile">
+          <i class="fa-solid fa-map-marker-alt contact-icon"></i>
+          <p>Address</p>
+          <a href="#">Abbanikunta, Warangal, Telangana</a>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+    
+    
+    <footer>
+      <div class="footer-container">
+          <div class="footer-logo">
+              <h2>Pavan Raj Koduru</h2>
+              <p>Fresher | Student | Programmer</p>
+          </div>
+  
+          <div class="footer-links">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+          </div>
+  
+          <div class="footer-socials">
+              <a href="https://www.linkedin.com/in/pavan-raj-2599462a6/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:pavankoduri111@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://github.com/pavanrajkoduru/" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+              </a>
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <p>© 2024 Pavan Raj Koduru. All Rights Reserved.</p>
+      </div>
+  </footer>
+  
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const typingAnimationElement = document.getElementById('typing-animation');
+          const typingTexts = ['CS Student', 'Web Developer', 'Fresher', 'Programmer'];
+          let textIndex = 0;
+          let charIndex = 0;
+  
+          function typeEffect() {
+              if (charIndex < typingTexts[textIndex].length) {
+                  typingAnimationElement.textContent += typingTexts[textIndex][charIndex];
+                  charIndex++;
+                  setTimeout(typeEffect, 150); // Adjust typing speed here
+              } else {
+                  setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      charIndex = 0;
+                      textIndex = (textIndex + 1) % typingTexts.length;
+                      typeEffect();
+                  }, 1500); // Delay before switching text
+              }
+          }
+  
+          typeEffect();
+      });
+  </script>
+  
+  
+</body>
+</html>
